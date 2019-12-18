@@ -13,28 +13,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
 
         <style>
-         @font-face { font-family: BankGothic; src: url('BankGothic.woff'); }
-
-
-         h1 {
-             font-size: 5em;
-             font-family: arial,helvetica;
-             color: #fff;
-             margin: 0;
-             padding: 0;
-         }
-
          #section0 {
              background-color: #1a1a1a;
          }
-         #section0 #prego {
+         #section0 #prego #logo {
              min-width: 400px;
              width: 40%;
-             margin: auto;
-             display: block;
-         }
-         #section0 #prego #logo {
-             width: 100%;
              display: block;
          }
          #section0 #address {
@@ -42,35 +26,31 @@
              cursor: pointer;
          }
          #section0 #location-icon {
-             margin-right: 10px;
-         }
-         #section1 h1 {
-             top: 50%;
-             transform: translateY(-50%);
-             position: relative;
+             margin-right: 1pt;
+             align: "bottom";
          }
         </style>
     </head>
     <body>
         <div id="fullpage">
             <div class="section" id="section0">
-                <div id="prego">
-                    <object id="logo" data="prego.svg" type="image/svg+xml">
-                    </object>
-                    <center><object id="location-icon" data="iconmonstr-location-pin-thin.svg" type="image/svg+xml"></object><a href="https://yandex.ru/map-widget/v1/-/CGhHZIlr" id="address">
-                        Санкт-Петербург, улица Дивенская, дом 5
-                    </a>
+                <center><div id="prego">
+                    <object id="logo" data="prego.svg" type="image/svg+xml"></object>
+                    <center>
+                        <object id="location-icon" data="iconmonstr-location-pin-thin.svg" type="image/svg+xml"></object>
+                        <a href="https://yandex.ru/map-widget/v1/-/CGhHZIlr" id="address">
+                            Санкт-Петербург, улица Дивенская, дом 5
+                        </a>
                     </center>
                 </div>
-
+                </center>
             </div>
         </div>
-
         <script type="text/javascript">
          new fullpage('#fullpage', {
-	         //options here
-	         autoScrolling:false,
-	         scrollHorizontally: true,
+             //options here
+             autoScrolling:false,
+             scrollHorizontally: true,
              continuousVertical: true,
              fitToSection: false,
              scrollBar: true,
