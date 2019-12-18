@@ -24,8 +24,25 @@
              padding: 0;
          }
 
-         #section0 object {
+         #section0 {
+             background-color: #1a1a1a;
+         }
+         #section0 #prego {
+             min-width: 400px;
+             width: 40%;
+             margin: auto;
+             display: block;
+         }
+         #section0 #prego #logo {
              width: 100%;
+             display: block;
+         }
+         #section0 #address {
+             color: #cccccc;
+             cursor: pointer;
+         }
+         #section0 #location-icon {
+             margin-right: 10px;
          }
          #section1 h1 {
              top: 50%;
@@ -36,13 +53,16 @@
     </head>
     <body>
         <div id="fullpage">
-	        <div class="section" id="section0">
-                <object data="prego.svg" type="image/svg+xml">
-                </object>
-            </div>
-            <div class="section " id="section1" data-percentage="80" data-centered="true">
-                <!-- <div style="z-index:1000;position:absolute;rgba(0, 0, 0,1);height:80%;width:100%" class="hidden-md hidden-lg"></div> -->
-                <iframe id="map" src="https://yandex.ru/map-widget/v1/-/CGhHZIlr" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
+            <div class="section" id="section0">
+                <div id="prego">
+                    <object id="logo" data="prego.svg" type="image/svg+xml">
+                    </object>
+                    <center><object id="location-icon" data="iconmonstr-location-pin-thin.svg" type="image/svg+xml"></object><a href="https://yandex.ru/map-widget/v1/-/CGhHZIlr" id="address">
+                        Санкт-Петербург, улица Дивенская, дом 5
+                    </a>
+                    </center>
+                </div>
+
             </div>
         </div>
 
