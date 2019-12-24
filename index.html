@@ -7,12 +7,16 @@
         <meta name="description" content="Caffe Prego">
         <meta name="keywords" content="caffe,prego,coffee">
         <meta name="Resource-type" content="Document">
+        <meta name="viewport" content="width=device-width">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
 
         <style>
+         body {
+             -webkit-text-size-adjust: 100%;
+         }
          #section0 {
              background-color: #1a1a1a;
          }
@@ -24,20 +28,77 @@
          #section0 #address {
              color: #cccccc;
              cursor: pointer;
-             font-size: 100%;
+             margin:5px;
          }
          #section0 #location-icon {
              margin-right: 1pt;
-             align: "bottom";
          }
+
          /* iphone 5 */
-         /* iphone 5 */
-         @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+         @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait) {
              #section0 #prego #logo {
-                 min-width: 100px;
-                 width: 100%;
+                 min-width:0px;
+                 width: 90%;
+
              }
          }
+         @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation : landscape)  {
+             #section0 #prego #logo {
+                 min-width:0px;
+                 width: 50%;
+
+             }
+         }
+
+         /* iphone 6, 6s, 7, 8 */
+         @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait) {
+             #section0 #prego #logo {
+                 min-width:0px;
+                 width: 70%;
+             }
+         }
+
+         /* iphone 6+, 6s+, 7+, 8+ */
+         @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation : portrait) {
+             #section0 #prego #logo {
+                 min-width:0px;
+                 width: 70%;
+             }
+         }
+
+         /* iphone X */
+         @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3)  and (orientation : portrait) {
+             #section0 #prego #logo {
+                 min-width:0px;
+                 width: 70%;
+             }
+         }
+
+         /* iphone XR */
+         @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2) and ( orientation: portrait ) and (orientation : portrait) {
+             #section0 #prego #logo {
+                 min-width:0px;
+                 width: 70%;
+             }
+         }
+
+         /* iphone XS */
+         @media only screen and (min-device-width : 375px) and (max-device-height : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait)
+         {
+             #section0 #prego #logo {
+                 min-width:0px;
+                 width: 90%;
+             }
+         }
+
+         /* iphone XS Max */
+         @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
+             #section0 #prego #logo {
+                 min-width:0px;
+                 width: 90%;
+             }
+         }
+
         </style>
     </head>
     <body>
@@ -45,10 +106,10 @@
             <div class="section" id="section0">
                 <center><div id="prego">
                     <object id="logo" data="prego.svg" type="image/svg+xml"></object>
-                    <center>
-                        <object id="location-icon" data="iconmonstr-location-pin-thin.svg" type="image/svg+xml"></object>
+                    <center id="address">
+                        <!--<object id="location-icon" data="iconmonstr-location-pin-thin.svg" type="image/svg+xml"></object>-->
                         <a href="https://yandex.ru/map-widget/v1/-/CGhHZIlr" id="address">
-                            Санкт-Петербург, улица Дивенская, дом 5
+                            Санкт-Петербург, Дивенская, 5
                         </a>
                     </center>
                 </div>
